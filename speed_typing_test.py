@@ -23,13 +23,8 @@ end = time.time()
 time_elapsed = round(end-start)
 
 if user_text == computer_text:
-  if time_elapsed <= 10:
-    print(f"You passed {time_elapsed} seconds. Pretty good.")
-  elif time_elapsed <= 15:
-    print(f"You passed {time_elapsed} seconds. You're too close.")
-  elif time_elapsed <= 20:
-    print(f"You passed {time_elapsed} seconds. You need more exercise.")
-  else:
-    print(f"You passed {time_elapsed} seconds. Pretty bad.")
-else:
-  print("Try again.")
+  if time_elapsed <= 10: print(f"You passed {time_elapsed} seconds. Pretty good.")
+  elif time_elapsed <= 15: print(f"You passed {time_elapsed} seconds. You're too close.")
+  elif time_elapsed <= 20: print(f"You passed {time_elapsed} seconds. You need more exercise.")
+  else: print(f"You passed {time_elapsed} seconds. Pretty bad.")
+else: print("Try again.")
